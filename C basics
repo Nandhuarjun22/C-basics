@@ -1,6 +1,12 @@
-header files
+header files-->>
+
 #include<stdio.h>   -- standard input and output
 #include<conio.h>   -- console input and output
 void main()         -- void no return type and main is function
 int main()          -- int return type and main is function
+
+Datatypes in c programming-->>
+1.built in primitives -- int,char,float,double
+2.derived             -- array,pointers
+3.user defined        -- struct,enum,union
 
