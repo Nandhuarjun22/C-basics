@@ -1,6 +1,6 @@
 header files
 #include<stdio.h>   -- standard input and output
 #include<conio.h>   -- console input and output
-void main()         -- void can't return any type and main is function
-int main()          -- int can return value and main is function
+void main()         -- void no return type and main is function
+int main()          -- int return type and main is function
 
