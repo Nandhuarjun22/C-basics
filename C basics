@@ -6,7 +6,35 @@ void main()         -- void no return type and main is function
 int main()          -- int return type and main is function
 
 Datatypes in c programming-->>
-1.built in primitives -- int,char,float,double
-2.derived             -- array,pointers
-3.user defined        -- struct,enum,union
+1.built in primitives -- int,char,float,double         %d -- integer
+2.derived             -- array,pointers                %c -- character
+3.user defined        -- struct,enum,union             %f -- float (if you want only 2 value then put %0.2f)
+
+Hello world simple program -->>
+
+  #include <stdio.h>
+    int main() {
+     printf("Hello world");
+     return 0;
+  }
+Arithmetic operators program -->>
+   #include<stdio.h>
+    int main()
+   {
+     int a,b,c;
+     printf("\n enter two number:");
+     scanf("%d%d",&a,&b);
+     c=a+b;
+     printf("\ntotal :%d",c);
+     c=a-b;
+     printf("\ndiff :%d",c);
+     c=a*b;
+     printf("\nmul :%d",c);
+     c=a/b;
+     printf("\ndiv :%d",c);
+     c=a%b;
+     printf("\nmod :%d",c);
+     return 0;
+  }
+
 
