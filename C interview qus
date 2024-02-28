@@ -1,5 +1,5 @@
-Ramesh's basic salary is input through the keyboard.His dearness allowance is 40% of basic salary,and house rent is 20% of basic salary
-write a program to calculate his gross salary
+ 1.Ramesh's basic salary is input through the keyboard.His dearness allowance is 40% of basic salary,and house rent is 20% of basic salary
+   write a program to calculate his gross salary
 
 #include<stdio.h>
 int main()
@@ -17,3 +17,39 @@ printf("\nGross salary:%f",gs);
 return 0;
 }
 
+2.the distance between two cities is input through the keyboard.write a program to convert and print this distance in meters,feet,inch and cm
+
+#include<stdio.h>
+int main()
+{
+    float km,m,cm,i,ft;
+    printf("Enter the kilometer :");                       output:-->>
+    scanf("%f",&km);                                       Enter the kilometer : 45
+    m=km*1000;                                             KM : 45.00
+    cm=m*100;                                              M  :45000.00
+    i=cm/2.54;                                             CM :4500000.00
+    ft=i/12;                                             INCH :1771653.00
+    printf("\n KM : %0.2f",km);                            FT :20020124:00
+    printf("\n M: %0.2f",m);
+    printf("\n CM : %0.2f",cm);
+    printf("\n INCH : %0.2f",i);
+    printf("\n FT : %o.2f",ft);
+    return 0;
+}
+
+3.if the marks obtained by astudent in five different subjects are input through the keyboard,find out the aggregate marks aand percentage
+  marks obtained by the student.assume that the maximum marks that can be obtained by a student in each subject is 100
+
+#include<stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,total;                              output:-->>
+    float avg;                                             Enter the 5 subject marks:90,99,98,97,99
+    printf("\n Enter the 5 subject marks :");              total:483
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);               average:96.60
+    total=m1+m2+m3+m4+m5;
+    avg=total/5.0;
+    printf("\n Total :%d",total);
+    printf("\n average:%0.2f",avg);
+    return 0;
+}
