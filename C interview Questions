@@ -88,3 +88,19 @@ int main()
     printf("\ncircumference of the circle:%0.2f",cir);
     return 0;
 }
+
+6. Two numbers are input through the keyboard into two locations b and c.write the program to interchange the contents of b abd c (SWAPPING)
+
+   #include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("\nEnter the 2 Nos:");                                output-->>
+    scanf("%d%d",&b,&c);                                         Enter the 2 Nos:5,10
+    printf("\nC : %d  D : %d",b,c);                              C : 5  D : 10 
+    a=b;                                                         C : 10  D : 5
+    b=c;
+    c=a;
+    printf("\nC : %d  D : %d",b,c);
+    return 0;
+}
