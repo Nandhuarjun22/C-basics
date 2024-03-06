@@ -66,3 +66,25 @@ int main()
     printf("\nResult:%f",c);
     return 0;
 }
+
+5.the lengh & breadh of a triangle and radius of a circle are input through the keyboard.write a program to calculate the area & perimeter of the
+  rectangle,and the area&circumference of the circle
+
+  #include<stdio.h>
+int main()
+{
+    float l,b,r_area,r_peri,r,c_area,cir;
+    printf("\nEnter length & breadth:");                      output:--->>
+    scanf("%f%f",&l,&b);                                     Enter length & breadth:5,3
+    printf("\nEnter the radius:");                           Enter the radius:5
+    scanf("%f",&r);                                          Area of rectangle:15.00
+    r_area=l*b;                                              perimeter of rectangle:16.00
+    r_peri=(2*(l+b));                                        Area of the circle:78.50
+    c_area=3.14*r*r;                                         circumference of the circle:31.40
+    cir=2*3.14*r;
+    printf("\nArea of rectangle:%0.2f",r_area);
+    printf("\nperimeter of rectangle:%0.2f",r_peri);
+    printf("\nArea of the circle:%0.2f",c_area);
+    printf("\ncircumference of the circle:%0.2f",cir);
+    return 0;
+}
