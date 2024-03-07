@@ -178,4 +178,27 @@ int main()
 10.In a town,the percentage of men is 52.the percentage of total literacy is 48%,if the total percentage of literate men is 35 of the total popiulation,
     write the program to find the total number of illetrate men and women ,if the population of the town is 80,000.
 
+
+ #include <stdio.h>
+int main() 
+{
+   int pop=80000,popmen,popwomen,totlit,litmen,litwomen,illitmen,illitwomen;                     output-->>
+   popmen=(52*pop)/100;                                                                          Total population        : 80000
+   popwomen=pop-popmen;                                                                          Total mens              : 41600
+   totlit=(48*pop)/100;                                                                          Total womens            : 38400
+   litmen=(35*pop)/100;                                                                          Total literacy          : 38400
+   litwomen=totlit-litmen;                                                                       Total  literacy men     : 28000
+   illitmen=popmen-litmen;                                                                       Total literacy women    : 10400 
+   illitwomen=popwomen-litwomen;                                                                 Total illiteracy men    : 13600 
+   printf("\nTotal population        : %d",pop);                                                 Total literacy women    : 28000 
+   printf("\nTotal mens              : %d",popmen);
+   printf("\nTotal womens            : %d",popwomen);
+   printf("\nTotal literacy          : %d",totlit);
+   printf("\nTotal  literacy men     : %d",litmen);
+   printf("\nTotal literacy women    : %d ",litwomen);
+   printf("\nTotal illiteracy men    : %d ",illitmen);
+   printf("\nTotal literacy women    : %d ",illitwomen);
+
+    return 0;
+}
    
