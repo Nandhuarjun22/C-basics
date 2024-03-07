@@ -174,3 +174,8 @@ int main()
     return 0;
 }
  
+
+10.In a town,the percentage of men is 52.the percentage of total literacy is 48%,if the total percentage of literate men is 35 of the total popiulation,
+    write the program to find the total number of illetrate men and women ,if the population of the town is 80,000.
+
+   
