@@ -201,4 +201,21 @@ int main()
 
     return 0;
 }
+
+
+11. A cashier has currency notes of denominations 10, 50 and 100.if the amount to the withdrawn is input through the keyboard in hundrewnds find the 
+   total number of currency notes of each dominations the cashier will have to give to the withdrawer.
+
+   #include <stdio.h>
+int main() 
+{
+  int amt;
+  printf("\nEnter the amount to withdraw :");                                           output-->>
+  scanf("%d",&amt);                                                                     Enter the amount to withdraw :1275
+  printf("\nRequired notes 100's: %d",(amt/100));                                       Required notes 100's: 12
+  printf("\nRequired notes  50's: %d",((amt%100)/50));                                  Required notes  50's: 1
+  printf("\nRequired notes  10's: %d",((amt%100)%50)/10);                               Required notes  10's: 2
+  printf("\nBalance amount      : %d",((amt%100)%50)%10);                               Balance amount      : 5
+ return 0;
+}
    
