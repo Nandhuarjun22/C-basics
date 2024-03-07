@@ -112,23 +112,44 @@ int main()
 int main() 
 {
    int a,b,c,d,e,f,g,h,i,sum=0;
-   printf("\nEnter 5 digit no: ");                                output-->>
-   scanf("%d",&a);//12345                                         Enter 5 digit no: 12345
-   b=a/10;//1234                                                  total : 15
-   c=a%10;//5
+   printf("\nEnter 5 digit no: ");                                 output-->>
+   scanf("%d",&a); //12345                                         Enter 5 digit no: 12345
+   b=a/10; //1234                                                  total : 15
+   c=a%10; //5
    sum+=c;
-   d=b/10;//123
-   e=b%10;//4
+   d=b/10; //123
+   e=b%10; //4
    sum+=e;
-   f=d/10;//12
-   g=d%10;//3
+   f=d/10; //12
+   g=d%10; //3
    sum+=g;
-   h=f/10;//1
+   h=f/10; //1
    sum+=h;
-   i=f%10;//2
+   i=f%10; //2
    sum+=i;
    printf("\ntotal : %d",sum);
     return 0;
 }
 
  
+8.if a five digit number is input through the keyboard,wrute a program to reverse a number.
+
+#include <stdio.h>
+
+int main() 
+{
+   int a,b,c,d,e,f,g,h,i,result;
+   printf("\nEnter the 5 digit no : ");                                      output-->>
+   scanf("%d",&a);                                                           Enter the 5 digit no : 12345
+   b=a/10;//1234                                                             Reverse for the 5 digit 12345 is: 54321
+   c=a%10;//5
+   d=b/10;//123
+   e=b%10;//4
+   f=d/10;//12
+   g=d%10;//3
+   h=f/10;//1
+   i=f%10;//2
+   result= (c*10000)+(e*1000)+(g*100)+(i*10)+h*1;
+  printf("\nReverse for the 5 digit %d is: %d",a,result);
+    return 0;
+}
