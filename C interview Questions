@@ -153,3 +153,24 @@ int main()
   printf("\nReverse for the 5 digit %d is: %d",a,result);
     return 0;
 }
+
+
+9.if a four digit number is input through the kryboard,write the program obtain the sum of first and last digit of the number.
+
+ #include <stdio.h>
+int main() 
+{
+   int a,b,c,d,e,f,g,h;
+   printf("\nEnter the 4 digit no : ");                            output-->>
+   scanf("%d",&a);                                                 Enter the 4 digit no : 1234 
+   b=a/10;//123                                                    sum of first and last digit: 5
+   c=a%10;//4
+   d=b/10;//12
+   e=b%10;//3
+   f=d/10;//1
+   g=d%10;//2
+   h=c+f;
+  printf("\nsum of first and last digit: %d",h);
+    return 0;
+}
+ 
