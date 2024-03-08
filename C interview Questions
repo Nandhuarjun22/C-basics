@@ -233,3 +233,4 @@ int main()
    printf("\nCost price of the 1 item is : %d",c);
    return 0;
 }
+
