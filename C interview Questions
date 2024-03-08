@@ -17,6 +17,8 @@ printf("\nGross salary:%f",gs);
 return 0;
 }
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 2.the distance between two cities is input through the keyboard.write a program to convert and print this distance in meters,feet,inch and cm
 
 #include<stdio.h>
@@ -37,6 +39,8 @@ int main()
     return 0;
 }
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 3.if the marks obtained by astudent in five different subjects are input through the keyboard,find out the aggregate marks aand percentage
   marks obtained by the student.assume that the maximum marks that can be obtained by a student in each subject is 100
 
@@ -53,6 +57,7 @@ int main()
     printf("\n average:%0.2f",avg);
     return 0;
 }
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 4.temparature of a city in fahrenheit degrees is input through the keyboard.write a program to convert this temparature into centigrade degrees.
 
@@ -66,6 +71,8 @@ int main()
     printf("\nResult:%f",c);
     return 0;
 }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5.the lengh & breadh of a triangle and radius of a circle are input through the keyboard.write a program to calculate the area & perimeter of the
   rectangle,and the area&circumference of the circle
@@ -88,6 +95,7 @@ int main()
     printf("\ncircumference of the circle:%0.2f",cir);
     return 0;
 }
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6. Two numbers are input through the keyboard into two locations b and c.write the program to interchange the contents of b abd c (SWAPPING)
 
@@ -104,6 +112,7 @@ int main()
     printf("\nC : %d  D : %d",b,c);
     return 0;
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 7.if a five digit number is input through the keyboard ,write a program to calculate the sum of its digits.(use % operators)
 
@@ -130,9 +139,9 @@ int main()
    printf("\ntotal : %d",sum);
     return 0;
 }
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- 
-8.if a five digit number is input through the keyboard,wrute a program to reverse a number.
+ 8.if a five digit number is input through the keyboard,wrute a program to reverse a number.
 
 #include <stdio.h>
 
@@ -153,8 +162,7 @@ int main()
   printf("\nReverse for the 5 digit %d is: %d",a,result);
     return 0;
 }
-
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 9.if a four digit number is input through the kryboard,write the program obtain the sum of first and last digit of the number.
 
  #include <stdio.h>
@@ -173,8 +181,8 @@ int main()
   printf("\nsum of first and last digit: %d",h);
     return 0;
 }
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
-
 10.In a town,the percentage of men is 52.the percentage of total literacy is 48%,if the total percentage of literate men is 35 of the total popiulation,
     write the program to find the total number of illetrate men and women ,if the population of the town is 80,000.
 
@@ -201,7 +209,7 @@ int main()
 
     return 0;
 }
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 11. A cashier has currency notes of denominations 10, 50 and 100.if the amount to the withdrawn is input through the keyboard in hundrewnds find the 
    total number of currency notes of each dominations the cashier will have to give to the withdrawer.
@@ -218,8 +226,9 @@ int main()
   printf("\nBalance amount      : %d",((amt%100)%50)%10);                               Balance amount      : 5
  return 0;
 }
-   
-12. If the total selling price of 15 items and the total profit earned on them is input through the keyboard,write a program to find the cost price of one item.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 12. If the total selling price of 15 items and the total profit earned on them is input through the keyboard,write a program to find the cost price of one item.
 
    #include <stdio.h>
 int main()
@@ -233,4 +242,5 @@ int main()
    printf("\nCost price of the 1 item is : %d",c);
    return 0;
 }
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
