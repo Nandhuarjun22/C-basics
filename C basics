@@ -130,13 +130,14 @@ Example(& ,| ,^ , >> ,<< ,~ ,)
 int main()
 {
  int a=25,b=45;
- printf("\nBitwise AND  :%d",a&b);                                            Output-->> copy and run
- printf("\nBitwise OR   :%d",a|b);                                            not=(25+1 and put - in front)
+ printf("\nBitwise AND  :%d",a&b);                             Output-->> copy and run
+ printf("\nBitwise OR   :%d",a|b);                             not=(25+1 and put - in front)
  printf("\nBitwise XOR  :%d",a^b); 
  printf("\nBitwise NOT  :%d",~a); 
- return 0;
+ printf("\nleft shift   :%d",a<<2); 
+ printf("\nright shift  :%d",a>>2); 
+return 0;
 }
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-7
+7.
