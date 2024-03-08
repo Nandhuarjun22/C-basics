@@ -95,3 +95,26 @@ int main()
  printf("\nLogical NOT     : %d",!(a>=35));
  return 0;
 }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5.Increment and decrement operators
+
+Example (++,--,++a,a++)
+
+#include <stdio.h>
+int main()
+{
+ int a=5;
+ printf("\npre increment       : %d",++a);                                      Output-->> copy and run
+ printf("\npost increment      : %d",a++);
+ printf("\nA                   : %d",a);
+ printf("\npre decrement       : %d",--a); 
+ printf("\npost decrement      : %d",a--); 
+ printf("\nA                   : %d",a); 
+ return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6.
