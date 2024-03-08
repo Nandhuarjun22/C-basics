@@ -219,3 +219,17 @@ int main()
  return 0;
 }
    
+12. If the total selling price of 15 items and the total profit earned on them is input through the keyboard,write a program to find the cost price of one item.
+
+   #include <stdio.h>
+int main()
+{
+   int sp,p,c;
+   printf("\nEnter the selling price of 15 items:");                                  output-->>
+   scanf("%d",&sp);                                                                   Enter the selling price of 15 items:200
+   printf("\nEnter the profit:");                                                     Enter the profit:50
+   scanf("%d",&p);                                                                    Cost price of the 1 item is : 10
+   c=(sp-p)/15;
+   printf("\nCost price of the 1 item is : %d",c);
+   return 0;
+}
