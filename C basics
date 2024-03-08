@@ -86,3 +86,12 @@ int main()
 
 example(Logical AND = &&,Logical OR = || , Logical NOT = !)
 
+#include <stdio.h>
+int main()
+{
+ int a=85;
+ printf("\nLogical AND     : %d",(a>=35 && a<=100));                              Output-->>
+ printf("\nLogical OR      : %d",(a>=35 || a<=100));                              true-1  false=0
+ printf("\nLogical NOT     : %d",!(a>=35));
+ return 0;
+}
