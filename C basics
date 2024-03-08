@@ -41,7 +41,48 @@ Hello world simple program -->>
   }
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-2. Assignment operators program --->>
+2. Assignment operators program --->> 
 
+example(a=b,(a+=b)=a+b,(a-=b=a-b))
+  
+#include<stdio.h>
+    int main()
+   {
+     int a=10,b=5;
+     a+=b;
+     printf("\nA : %d ",a);                          Output-->> A : 15 A : 10 A : 50 A : 10 A : 0 
+     a-=b;
+     printf("\nA : %d ",a);
+     a*=b;
+     printf("\nA : %d ",a);
+     a/=b;
+     printf("\nA : %d ",a);
+     a%=b;
+     printf("\nA : %d ",a);
+     return 0;
+  }
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.Relational operators --->>
+
+example(==,>,<,<=,>=,!=)
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5;
+    printf("\nGreater than               : %d",a>b);                               Output-->> 
+    printf("\nless   than                : %d",a<b);                               true-1  false=0
+    printf("\nGreater than or equal to   : %d",a>=b);
+    printf("\nlesser  than or equal to   : %d",a<=b);
+    printf("\nEqual to                   : %d",a==b);
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4.Logical operators -->>
+
+example(Logical AND = &&,Logical OR = || , Logical NOT = !)
 
