@@ -17,7 +17,10 @@ Hello world simple program -->>
      printf("Hello world");
      return 0;
   }
-Arithmetic operators program -->>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Arithmetic operators program -->>
+
    #include<stdio.h>
     int main()
    {
@@ -36,5 +39,9 @@ Arithmetic operators program -->>
      printf("\nmod :%d",c);
      return 0;
   }
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Assignment operators program --->>
+
 
 
