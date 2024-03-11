@@ -140,4 +140,141 @@ return 0;
 }
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-7.
+7. control statement --- ( if , if else , switch , nested if , for loop , while loop , do while loop , conditional operator )
+
+ (I)--if statement :
+
+ #include <stdio.h>
+ int main() {
+    char name[10];
+    int age;
+    printf("\nEnter the name: ");
+    scanf("%s",&name);
+    printf("\nEnter your age:");
+    scanf("%d",&age);
+    if(age>=18);
+    {
+        printf("\n %s age is %d Eligible for vote",name,age);
+    }
+}
+
+                    ----------------------------------------------------------------------------------------------------------------------------
+
+  (II)--if else statement :
+
+   #include <stdio.h>
+   int main() {
+    char name[10];
+    int age;
+    printf("\nEnter the name: ");
+    scanf("%s",&name);
+    printf("\nEnter your age:");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        printf("\n %s age is %d Eligible for vote",name,age);
+    }
+    else
+    {
+       printf("\n %s age is %d  not Eligible for vote",name,age);
+
+    }
+    return 0;
+   }
+
+                    ----------------------------------------------------------------------------------------------------------------------------
+
+ (III)--else if statement :
+
+    #include <stdio.h>
+    int main() {
+    int a;
+    printf("Enter the value of A :");
+    scanf("%d",&a);
+    if(a<0)
+    {
+        printf("%d is Negative values",a);
+    }
+    else if(a==0)
+    {
+       printf("the given number is zero",a);
+    }
+    else if(a>0)
+    {
+        printf("%d is Positive value",a);
+    }
+    return 0;
+    }
+
+                  ---------------------------------------------------------------------------------------------------------------------------------------
+
+ (IV)--Nested if statement :(if and if inside)
+
+
+   #include <stdio.h>
+int main()
+{
+    int year;
+    printf("Enter the year :");
+    scanf("%d",&year);
+    if(year%100==0)
+    {
+        if(year%400==0)
+        {
+             printf("%d is leap year",year);
+        }
+        else
+        {
+        printf("%d is not leap year",year);
+        }
+    }
+    else
+    {
+        if(year%4==0)
+        {
+        printf("%d is leap year",year);
+        }
+       else 
+        {
+        printf("%d is not leap year",year);
+        }
+    return 0;
+   }
+}
+
+               ---------------------------------------------------------------------------------------------------------------------------------------
+
+  (V)--switch statement :
+
+    #include <stdio.h>
+    int main()
+ {
+    int choice;
+    printf("Enter the value :");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+     case 1:
+         printf("\n One");
+         break;
+     case 2:
+         printf("\n Two");
+         break;
+     case 3:
+         printf("\n Three");
+         break;
+    default:
+        printf("\n Invalid no");
+        break;
+    }
+    
+    return 0;
+ }
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+ (VI)---Conditional operator
+   
+  
+   
