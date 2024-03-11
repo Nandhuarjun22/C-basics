@@ -9,7 +9,7 @@ int main()          -- int return type and main is function
 
 Datatypes in c programming-->>
 1.built in primitives -- int,char,float,double         %d -- integer
-2.derived             -- array,pointers                %c -- character
+2.derived             -- array,pointers                %c , %s-- character
 3.user defined        -- struct,enum,union             %f -- float (if you want only 2 value then put %0.2f)
 
 
