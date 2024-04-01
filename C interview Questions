@@ -319,6 +319,34 @@ int main()
     }
  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ LIBRARY QUESTIONS:
 
+#include<stdio.h>
+int main()
+{
+    int days;
+    printf("\nEnter the no of days :");
+    scanf("%d",&days);
+    if(days>=1 && days<=5)
+    {
+        printf("\n Fine amount 10 rupees");
+        
+    }
+    else if(days>=6 && days<=10)
+    {
+        printf("\n Fine amount 20 rupees");
+        
+    }
+     else if(days>=11 && days<=29)
+    {
+        printf("\n Fine amount 50 rupees");
+        
+    }
+    else
+    {
+        printf("\n Your Membership is cancelled");
+    }
+    return 0;
+}
 
- 
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
