@@ -426,3 +426,46 @@ int main()
     return 0;
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MENU CARD
+
+#include<stdio.h>
+int main()
+{
+    int ch,qty;
+    printf("\n\tMENU CARD");
+    printf("\n\t\t1.TEA            RS:10");
+    printf("\n\t\t2.COFFEE         RS:15");
+    printf("\n\t\t3.COLD COFFEE    RS:25");
+    printf("\n\t\t4.MILK SHAKE     RS:50");
+    printf("\nEnter your choice : ");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+          printf("\nYOU HAVE ENTERED TEA");
+          printf("\nEnter the quantity:");
+          scanf("%d",&qty);
+          printf("\nTotal Amount : %d",(qty*10));
+          break;
+    case 2:
+          printf("\nYOU HAVE ENTERED COFFEE");
+          printf("\nEnter the quantity:");
+          scanf("%d",&qty);
+          printf("\nTotal Amount : %d",(qty*15));
+          break;
+    case 3:
+          printf("\nYOU HAVE ENTERED COLD COFFEE");
+          printf("\nEnter the quantity:");
+          scanf("%d",&qty);
+          printf("\nTotal Amount : %d",(qty*25));  
+          break;
+    case 4:
+          printf("\nYOU HAVE ENTERED MILK SHAKE");
+          printf("\nEnter the quantity:");
+          scanf("%d",&qty);
+          printf("\nTotal Amount : %d",(qty*50)); 
+          break;
+    }     
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
