@@ -1,0 +1,473 @@
+1.Ramesh's basic salary is input through the keyboard.His dearness allowance is 40% of basic salary,and house rent is 20% of basic salary
+   write a program to calculate his gross salary
+
+#include<stdio.h>
+int main()
+{
+float bs,da,hra,gs;
+printf("\nEnter the Basic salary:");                        output:-->>
+scanf("%f",&bs);                                            Enter the Basic salary:8000
+da=bs*0.4;                                                  Basic salary:8000.000000
+hra=bs*0.2;                                                 DA:3200.000000
+gs=bs+da+hra;                                               HRA:1600.000000
+printf("\nBasic salary:%f",bs);                             Gross salary:12800.000000                              
+printf("\nDA:%f",da);
+printf("\nHRA:%f",hra);
+printf("\nGross salary:%f",gs);
+return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.the distance between two cities is input through the keyboard.write a program to convert and print this distance in meters,feet,inch and cm
+
+#include<stdio.h>
+int main()
+{
+    float km,m,cm,i,ft;
+    printf("Enter the kilometer :");                       output:-->>
+    scanf("%f",&km);                                       Enter the kilometer : 45
+    m=km*1000;                                             KM : 45.00
+    cm=m*100;                                              M  :45000.00
+    i=cm/2.54;                                             CM :4500000.00
+    ft=i/12;                                             INCH :1771653.00
+    printf("\n KM : %0.2f",km);                            FT :20020124:00
+    printf("\n M: %0.2f",m);
+    printf("\n CM : %0.2f",cm);
+    printf("\n INCH : %0.2f",i);
+    printf("\n FT : %o.2f",ft);
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.if the marks obtained by astudent in five different subjects are input through the keyboard,find out the aggregate marks aand percentage
+  marks obtained by the student.assume that the maximum marks that can be obtained by a student in each subject is 100
+
+#include<stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,total;                              output:-->>
+    float avg;                                             Enter the 5 subject marks:90,99,98,97,99
+    printf("\n Enter the 5 subject marks :");              total:483
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);               average:96.60
+    total=m1+m2+m3+m4+m5;
+    avg=total/5.0;
+    printf("\n Total :%d",total);
+    printf("\n average:%0.2f",avg);
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4.temparature of a city in fahrenheit degrees is input through the keyboard.write a program to convert this temparature into centigrade degrees.
+
+#include<stdio.h>
+int main()
+{
+    float f,c;                                            output:-->>
+    printf("Enter the temparature:");                     Enter the temparature:100
+    scanf("%f",&f);                                       Result:37.7777
+    c=(f-32)*(5.0/9.0);
+    printf("\nResult:%f",c);
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5.the lengh & breadh of a triangle and radius of a circle are input through the keyboard.write a program to calculate the area & perimeter of the
+  rectangle,and the area&circumference of the circle
+
+  #include<stdio.h>
+int main()
+{
+    float l,b,r_area,r_peri,r,c_area,cir;
+    printf("\nEnter length & breadth:");                      output:--->>
+    scanf("%f%f",&l,&b);                                     Enter length & breadth:5,3
+    printf("\nEnter the radius:");                           Enter the radius:5
+    scanf("%f",&r);                                          Area of rectangle:15.00
+    r_area=l*b;                                              perimeter of rectangle:16.00
+    r_peri=(2*(l+b));                                        Area of the circle:78.50
+    c_area=3.14*r*r;                                         circumference of the circle:31.40
+    cir=2*3.14*r;
+    printf("\nArea of rectangle:%0.2f",r_area);
+    printf("\nperimeter of rectangle:%0.2f",r_peri);
+    printf("\nArea of the circle:%0.2f",c_area);
+    printf("\ncircumference of the circle:%0.2f",cir);
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. Two numbers are input through the keyboard into two locations b and c.write the program to interchange the contents of b abd c (SWAPPING)
+
+   #include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("\nEnter the 2 Nos:");                                output-->>
+    scanf("%d%d",&b,&c);                                         Enter the 2 Nos:5,10
+    printf("\nC : %d  D : %d",b,c);                              C : 5  D : 10 
+    a=b;                                                         C : 10  D : 5
+    b=c;
+    c=a;
+    printf("\nC : %d  D : %d",b,c);
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7.if a five digit number is input through the keyboard ,write a program to calculate the sum of its digits.(use % operators)
+
+ #include <stdio.h>
+
+int main() 
+{
+   int a,b,c,d,e,f,g,h,i,sum=0;
+   printf("\nEnter 5 digit no: ");                                 output-->>
+   scanf("%d",&a); //12345                                         Enter 5 digit no: 12345
+   b=a/10; //1234                                                  total : 15
+   c=a%10; //5
+   sum+=c;
+   d=b/10; //123
+   e=b%10; //4
+   sum+=e;
+   f=d/10; //12
+   g=d%10; //3
+   sum+=g;
+   h=f/10; //1
+   sum+=h;
+   i=f%10; //2
+   sum+=i;
+   printf("\ntotal : %d",sum);
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 8.if a five digit number is input through the keyboard,wrute a program to reverse a number.
+
+#include <stdio.h>
+
+int main() 
+{
+   int a,b,c,d,e,f,g,h,i,result;
+   printf("\nEnter the 5 digit no : ");                                      output-->>
+   scanf("%d",&a);                                                           Enter the 5 digit no : 12345
+   b=a/10;//1234                                                             Reverse for the 5 digit 12345 is: 54321
+   c=a%10;//5
+   d=b/10;//123
+   e=b%10;//4
+   f=d/10;//12
+   g=d%10;//3
+   h=f/10;//1
+   i=f%10;//2
+   result= (c*10000)+(e*1000)+(g*100)+(i*10)+h*1;
+  printf("\nReverse for the 5 digit %d is: %d",a,result);
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9.if a four digit number is input through the kryboard,write the program obtain the sum of first and last digit of the number.
+
+ #include <stdio.h>
+int main() 
+{
+   int a,b,c,d,e,f,g,h;
+   printf("\nEnter the 4 digit no : ");                            output-->>
+   scanf("%d",&a);                                                 Enter the 4 digit no : 1234 
+   b=a/10;//123                                                    sum of first and last digit: 5
+   c=a%10;//4
+   d=b/10;//12
+   e=b%10;//3
+   f=d/10;//1
+   g=d%10;//2
+   h=c+f;
+  printf("\nsum of first and last digit: %d",h);
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+10.In a town,the percentage of men is 52.the percentage of total literacy is 48%,if the total percentage of literate men is 35 of the total popiulation,
+    write the program to find the total number of illetrate men and women ,if the population of the town is 80,000.
+
+
+ #include <stdio.h>
+int main() 
+{
+   int pop=80000,popmen,popwomen,totlit,litmen,litwomen,illitmen,illitwomen;                     output-->>
+   popmen=(52*pop)/100;                                                                          Total population        : 80000
+   popwomen=pop-popmen;                                                                          Total mens              : 41600
+   totlit=(48*pop)/100;                                                                          Total womens            : 38400
+   litmen=(35*pop)/100;                                                                          Total literacy          : 38400
+   litwomen=totlit-litmen;                                                                       Total  literacy men     : 28000
+   illitmen=popmen-litmen;                                                                       Total literacy women    : 10400 
+   illitwomen=popwomen-litwomen;                                                                 Total illiteracy men    : 13600 
+   printf("\nTotal population        : %d",pop);                                                 Total literacy women    : 28000 
+   printf("\nTotal mens              : %d",popmen);
+   printf("\nTotal womens            : %d",popwomen);
+   printf("\nTotal literacy          : %d",totlit);
+   printf("\nTotal  literacy men     : %d",litmen);
+   printf("\nTotal literacy women    : %d ",litwomen);
+   printf("\nTotal illiteracy men    : %d ",illitmen);
+   printf("\nTotal literacy women    : %d ",illitwomen);
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+11. A cashier has currency notes of denominations 10, 50 and 100.if the amount to the withdrawn is input through the keyboard in hundrewnds find the 
+   total number of currency notes of each dominations the cashier will have to give to the withdrawer.
+
+   #include <stdio.h>
+int main() 
+{
+  int amt;
+  printf("\nEnter the amount to withdraw :");                                           output-->>
+  scanf("%d",&amt);                                                                     Enter the amount to withdraw :1275
+  printf("\nRequired notes 100's: %d",(amt/100));                                       Required notes 100's: 12
+  printf("\nRequired notes  50's: %d",((amt%100)/50));                                  Required notes  50's: 1
+  printf("\nRequired notes  10's: %d",((amt%100)%50)/10);                               Required notes  10's: 2
+  printf("\nBalance amount      : %d",((amt%100)%50)%10);                               Balance amount      : 5
+ return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 12. If the total selling price of 15 items and the total profit earned on them is input through the keyboard,write a program to find the cost price of one item.
+
+   #include <stdio.h>
+int main()
+{
+   int sp,p,c;
+   printf("\nEnter the selling price of 15 items:");                                  output-->>
+   scanf("%d",&sp);                                                                   Enter the selling price of 15 items:200
+   printf("\nEnter the profit:");                                                     Enter the profit:50
+   scanf("%d",&p);                                                                    Cost price of the 1 item is : 10
+   c=(sp-p)/15;
+   printf("\nCost price of the 1 item is : %d",c);
+   return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13. Leap year question.
+
+    #include <stdio.h>
+int main()
+{
+    int year;
+    printf("Enter the year :");
+    scanf("%d",&year);
+    if(year%100==0)
+    {
+        if(year%400==0)
+        {
+             printf("%d is leap year",year);
+        }
+        else
+        {
+        printf("%d is not leap year",year);
+        }
+    }
+    else
+    {
+        if(year%4==0)
+        {
+        printf("%d is leap year",year);
+        }
+       else 
+        {
+        printf("%d is not leap year",year);
+        }
+    return 0;
+   }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RESULT MANAGEMENT SYSTEM:
+
+#include <stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,total;
+    float avg;
+    printf("\n Enter 5 Marks:\n");
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    total=m1+m2+m3+m4+m5;
+    avg=total/5.0;
+    printf("\n Total  :%d",total);
+    printf("\n Average:%f",avg);
+    if(m1>=35&&m2>=35&&m3>=35&&m4>=35&&m5>=35)
+    {
+        printf("n \n Result: pass");
+         if(avg>=90&&avg<=100)
+        {
+            printf("\n Grade : A grade");
+        }
+         else if(avg>=80&&avg<=89)
+        {
+            printf("\n Grade : B grade");
+        }
+         else if(avg>=70&&avg<=79);
+        {
+            printf("\n Grade : c grade");
+        }
+         else
+        {
+            printf("\n Grade : D grade");
+        }
+        
+    else
+    {
+         printf("n \n Result: fail");
+         printf("n \n Grade: No grade");
+    }
+ 
+------------------------------------------------------------------------------------------------------------------------------------------
+ LIBRARY QUESTIONS:
+
+#include<stdio.h>
+int main()
+{
+    int days;
+    printf("\nEnter the no of days :");
+    scanf("%d",&days);
+    if(days>=1 && days<=5)
+    {
+        printf("\n Fine amount 10 rupees");
+        
+    }
+    else if(days>=6 && days<=10)
+    {
+        printf("\n Fine amount 20 rupees");
+        
+    }
+     else if(days>=11 && days<=29)
+    {
+        printf("\n Fine amount 50 rupees");
+        
+    }
+    else
+    {
+        printf("\n Your Membership is cancelled");
+    }
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+ODD OR EVEN NUMBER (Use % modulus operator)
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("\nEnter the value");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        printf("\n%d is even number",a);
+    }
+    else
+    {
+        printf("\n%d is odd number",a);
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+VOWELS OR NOT (using switch case)
+
+#include<stdio.h>
+int main()
+{
+    char c;
+    printf("\nEnter the character :");
+    scanf("%c",&c);
+    switch(c)
+    {
+        case 'a':
+        printf("%c is a vowel",c);
+        break;
+        case 'e':
+        printf("%c is a vowel",c);
+        break;
+        case 'i':
+        printf("%c is a vowel",c);
+        break;
+        case 'o':
+        printf("%c is a vowel",c);                         ( use group switch = case,case,case and one break)
+        break;
+        case 'u':
+        printf("%c is a vowel",c);
+        break;
+        default:
+        printf("%c is not a vowel",c);
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------   
+
+ARMSTRONG NUMBER OR NOT (153-(*3+)=153)
+
+#include<stdio.h>
+int main()
+{
+    int n,a,d1,d2,d3;
+    printf("\nEnter the 3 digit number:");
+    scanf("%d",&n);//153
+    a=n/10;//15
+    d1=n%10;//3
+    d2=a%10;//5
+    d3=a/10;//1
+    printf("%d  %d  %d",d3,d2,d1);
+    a=(d1*d1*d1)+(d2*d2*d2)+(d3*d3*d3);
+    if(a==n)
+    {
+        printf("\n%d is a armstrong number",n);
+    }
+    else
+    {
+        printf("\n%d is not a armstrong number",n);
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+
+MENU CARD PROGRAM
+
+#include<stdio.h>
+int main()
+{
+    int ch,qty;
+    printf("\n\tMENU CARD");
+    printf("\n\t\t1.TEA            RS:10");
+    printf("\n\t\t2.COFFEE         RS:15");
+    printf("\n\t\t3.COLD COFFEE    RS:25");
+    printf("\n\t\t4.MILK SHAKE     RS:50");
+    printf("\nEnter your choice : ");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+          printf("\nYOU HAVE ENTERED TEA");
+          printf("\nEnter the quantity:");
+          scanf("%d",&qty);
+          printf("\nTotal Amount : %d",(qty*10));
+          break;
+    case 2:
+          printf("\nYOU HAVE ENTERED COFFEE");
+          printf("\nEnter the quantity:");
+          scanf("%d",&qty);
+          printf("\nTotal Amount : %d",(qty*15));
+          break;
+    case 3:
+          printf("\nYOU HAVE ENTERED COLD COFFEE");
+          printf("\nEnter the quantity:");
+          scanf("%d",&qty);
+          printf("\nTotal Amount : %d",(qty*25));  
+          break;
+    case 4:
+          printf("\nYOU HAVE ENTERED MILK SHAKE");
+          printf("\nEnter the quantity:");
+          scanf("%d",&qty);
+          printf("\nTotal Amount : %d",(qty*50)); 
+          break;
+    }     
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,295 @@
+header files-->>
+
+#include<stdio.h>   -- standard input and output
+#include<conio.h>   -- console input and output
+void main()         -- void no return type and main is function
+int main()          -- int return type and main is function
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Datatypes in c programming-->>
+1.built in primitives -- int,char,float,double         %d -- integer
+2.derived             -- array,pointers                %c , %s-- character
+3.user defined        -- struct,enum,union             %f -- float (if you want only 2 value then put %0.2f)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hello world simple program -->>
+
+  #include <stdio.h>
+    int main() {
+     printf("Hello world");
+     return 0;
+  }
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Arithmetic operators program -->>
+
+   #include<stdio.h>
+    int main()
+   {
+     int a,b,c;
+     printf("\n enter two number:");
+     scanf("%d%d",&a,&b);
+     c=a+b;
+     printf("\ntotal :%d",c);
+     c=a-b;
+     printf("\ndiff :%d",c);
+     c=a*b;
+     printf("\nmul :%d",c);
+     c=a/b;
+     printf("\ndiv :%d",c);
+     c=a%b;
+     printf("\nmod :%d",c);
+     return 0;
+  }
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Assignment operators program --->> 
+
+example(a=b,(a+=b)=a+b,(a-=b=a-b))
+  
+#include<stdio.h>
+    int main()
+   {
+     int a=10,b=5;
+     a+=b;
+     printf("\nA : %d ",a);                          Output-->> A : 15 A : 10 A : 50 A : 10 A : 0 
+     a-=b;
+     printf("\nA : %d ",a);
+     a*=b;
+     printf("\nA : %d ",a);
+     a/=b;
+     printf("\nA : %d ",a);
+     a%=b;
+     printf("\nA : %d ",a);
+     return 0;
+  }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.Relational operators --->>
+
+example(==,>,<,<=,>=,!=)
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5;
+    printf("\nGreater than               : %d",a>b);                               Output-->> 
+    printf("\nless   than                : %d",a<b);                               true-1  false=0
+    printf("\nGreater than or equal to   : %d",a>=b);
+    printf("\nlesser  than or equal to   : %d",a<=b);
+    printf("\nEqual to                   : %d",a==b);
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4.Logical operators -->>
+
+example(Logical AND = &&,Logical OR = || , Logical NOT = !)
+
+#include <stdio.h>
+int main()
+{
+ int a=85;
+ printf("\nLogical AND     : %d",(a>=35 && a<=100));                              Output-->>
+ printf("\nLogical OR      : %d",(a>=35 || a<=100));                              true-1  false=0
+ printf("\nLogical NOT     : %d",!(a>=35));
+ return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5.Increment and decrement operators
+
+Example (++,--,++a,a++)
+
+#include <stdio.h>
+int main()
+{
+ int a=5;
+ printf("\npre increment       : %d",++a);                                      Output-->> copy and run
+ printf("\npost increment      : %d",a++);
+ printf("\nA                   : %d",a);
+ printf("\npre decrement       : %d",--a); 
+ printf("\npost decrement      : %d",a--); 
+ printf("\nA                   : %d",a); 
+ return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6.Bitwise operator
+
+Example(& ,| ,^ , >> ,<< ,~ ,)
+
+#include <stdio.h>
+int main()
+{
+ int a=25,b=45;
+ printf("\nBitwise AND  :%d",a&b);                             Output-->> copy and run
+ printf("\nBitwise OR   :%d",a|b);                             not=(25+1 and put - in front)
+ printf("\nBitwise XOR  :%d",a^b); 
+ printf("\nBitwise NOT  :%d",~a); 
+ printf("\nleft shift   :%d",a<<2); 
+ printf("\nright shift  :%d",a>>2); 
+return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. control statement --- ( if , if else , switch , nested if , for loop , while loop , do while loop , conditional operator )
+
+ (I)--if statement :
+
+ #include <stdio.h>
+ int main() {
+    char name[10];
+    int age;
+    printf("\nEnter the name: ");
+    scanf("%s",&name);
+    printf("\nEnter your age:");
+    scanf("%d",&age);
+    if(age>=18);
+    {
+        printf("\n %s age is %d Eligible for vote",name,age);
+    }
+}
+
+                    ----------------------------------------------------------------------------------------------------------------------------
+
+  (II)--if else statement :
+
+   #include <stdio.h>
+   int main() {
+    char name[10];
+    int age;
+    printf("\nEnter the name: ");
+    scanf("%s",&name);
+    printf("\nEnter your age:");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        printf("\n %s age is %d Eligible for vote",name,age);
+    }
+    else
+    {
+       printf("\n %s age is %d  not Eligible for vote",name,age);
+
+    }
+    return 0;
+   }
+
+                    ----------------------------------------------------------------------------------------------------------------------------
+
+ (III)--else if statement :
+
+    #include <stdio.h>
+    int main() {
+    int a;
+    printf("Enter the value of A :");
+    scanf("%d",&a);
+    if(a<0)
+    {
+        printf("%d is Negative values",a);
+    }
+    else if(a==0)
+    {
+       printf("the given number is zero",a);
+    }
+    else if(a>0)
+    {
+        printf("%d is Positive value",a);
+    }
+    return 0;
+    }
+
+                  ---------------------------------------------------------------------------------------------------------------------------------------
+
+ (IV)--Nested if statement :(if and if inside)
+
+
+   #include <stdio.h>
+int main()
+{
+    int year;
+    printf("Enter the year :");
+    scanf("%d",&year);
+    if(year%100==0)
+    {
+        if(year%400==0)
+        {
+             printf("%d is leap year",year);
+        }
+        else
+        {
+        printf("%d is not leap year",year);
+        }
+    }
+    else
+    {
+        if(year%4==0)
+        {
+        printf("%d is leap year",year);
+        }
+       else 
+        {
+        printf("%d is not leap year",year);
+        }
+    return 0;
+   }
+}
+
+               ---------------------------------------------------------------------------------------------------------------------------------------
+
+  (V)--switch statement :
+
+    #include <stdio.h>
+    int main()
+ {
+    int choice;
+    printf("Enter the value :");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+     case 1:
+         printf("\n One");
+         break;
+     case 2:
+         printf("\n Two");
+         break;
+     case 3:
+         printf("\n Three");
+         break;
+    default:
+        printf("\n Invalid no");
+        break;
+    }
+    
+    return 0;
+ }
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+ (VI)---Conditional operator -- (single line comment ? :)
+
+  #include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("\n Enter the number of A and B:\n");
+    scanf("%d%d",&a,&b);
+    c=a>b?a:b;
+    printf("the greatest number is %d:",c);
+    return 0;
+}
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
